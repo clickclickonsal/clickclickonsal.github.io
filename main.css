@@ -1,0 +1,27 @@
+html {
+  background: black;
+}
+
+.top-gray-bar {
+  position: absolute;
+  height: 8%;
+  width: 100%;
+  background: grey;
+  color: white;
+}
+
+h1 {
+  width: 50%;
+}
+
+#role {
+  font-size: 0.5em;
+}
+
+#social-icons {
+  position: absolute;
+  top: 0.3em;
+  right: 0;
+  text-align: right;
+  width: 30%;
+}
