@@ -1,9 +1,13 @@
 html {
   background: black;
+  height: 100%;
+  width: 100%;
 }
 
 .top-gray-bar {
-  position: absolute;
+  /*position: absolute;
+  top: 0;
+  left: 0;*/
   height: 8%;
   width: 100%;
   background: grey;
@@ -11,7 +15,11 @@ html {
 }
 
 h1 {
+  position: relative;
+  left: 0;
+  bottom: 0;
   width: 50%;
+  background: grey;
 }
 
 #role {
@@ -21,7 +29,15 @@ h1 {
 #social-icons {
   position: absolute;
   top: 0.3em;
-  right: 0;
+  right: 1em;
   text-align: right;
   width: 30%;
+}
+
+#social-icons img {
+  height: 7%;
+  width: 7%;
+}
+#social-icons img:hover {
+
 }
