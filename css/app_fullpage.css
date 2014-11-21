@@ -41,19 +41,14 @@ h3 {
   text-align: center;
   font-family: Rockwell Extra Bold;
   color: white;
-  margin-top: 0em;
 }
-
-/*.img-div img {
-  height: 40%;
-  width: 40%;
-}*/
 
 .img-div {
   text-align: center;
 }
 
 .project-all p {
+  color: white;
   clear: both;
   margin: auto;
   width: 42%;
@@ -68,12 +63,22 @@ h3 {
   text-decoration: none;
   color: #39beea;
   transition: 1s;
+  color: green;
 }
 
 .project-all a:hover {
   color: black;
 }
 
+.first-button {
+  font-size: 2em;
+  text-align: left;
+}
+
+.second-button {
+  font-size: 2em;
+  float: right;
+}
 /*projects page
 
 /*skills page*/
