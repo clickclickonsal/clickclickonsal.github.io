@@ -159,4 +159,17 @@ h1 {
   font-family: Rockwell Extra Bold;
   font-size: 3em;
 }
+
+.contact ul {
+  list-style-type: none;
+  background: grey;
+  width: 40%;
+  margin: auto;
+  opacity: .6;
+  border-radius: 0.5em;
+}
+
+.contact li {
+  font-size: 2em;
+}
 /*contact me
