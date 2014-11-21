@@ -14,7 +14,7 @@
     <script type="text/javascript">
       $(document).ready(function() {
         $('#fullpage').fullpage({
-          anchors: ['about-me', 'projects', 'skills'],
+          anchors: ['about-me', 'projects', 'skills', 'contact-me'],
           menu: '#menu'
         });
         $('#fullpage').on("mousewheel", function () {
@@ -33,10 +33,11 @@
       <li data-menuanchor="projects"><a href="#projects">Projects</a></li>
       <li data-menuanchor="skills"><a href="#skills">Skills</a></li>
       <li data-menuanchor="contact-me"><a href="#contact-me">Contact</a></li>
+      <li data-menuanchor="-resume"><a href="css/images/SalvadorHernandezResume.pdf">My Resume</a></li>
     </ul>
 
     <div class="social-icons">
-    <strong>Connect With Me</strong>
+      <strong>Connect With Me</strong>
       <a href="https://twitter.com/clickclickonsal">
         <img src="css/images/twitter_logo.png" width="48" height="48" alt="Twitter" />
       </a>
@@ -57,7 +58,11 @@
         <img src="css/images/codepen.png" width="48" height="48" alt="Codepen" />
       </a>
     </div>
-  
+
+    <div id="footer">
+      &copy; 2014 Salvador Hernandez Web Dev
+    </div>
+
     <div id="fullpage">
 
       <div class="section home active" data-anchor="about-me"> 
@@ -69,19 +74,78 @@
         </div>
       </div>
 
-      <div class="section" data-anchor="projects">
-        My Projects
+      <div class="section projects" data-anchor="projects">
+
+        <div class="slide project-all">
+          <h3>Docarmation</h3>
+          <div class="img-div"><img src="css/images/docarmation.png" height="300" width="600"></div>
+          <p>Docarmation is a website to help vehicle owners keep track of their maintenace records for their vehicle. It will help the owner appreciate their vehicle a little more.<br />
+            <button><a href="http://quiet-stream-4980.herokuapp.com/vehicles/new">Live App &raquo;</a></button>
+            <button><a href="https://github.com/clickclickonsal/Docarment">GitHub &raquo;</a></button>
+          </p>
+        </div>
+
+        <div class="slide project-all">
+          <h3>Survival</h3>
+          <div class="img-div"><img src="css/images/survival.png" height="300" width="600"></div>
+          <p>Calculate your chances of surviving the zombie apocalypse. A group project built on Rails & JavaScript for General Assembly Web Development Immersive 2 in Washington, DC. Team members: Sam Barrientos, Jake Catt, Salvador Hernandez, Mandy Moore, and Clare Politano.<br />
+            <button><a href="runforyour.life">runforyour.life &raquo;</a></button>
+            <button><a href="https://github.com/cpolitano/survival">GitHub &raquo;</a></button>
+          </p>
+        </div>
+
+        <div class="slide project-all">
+          <h3>Podcloud</h3>
+          <div class="img-div"><img src="css/images/podcloud.png" height="300" width="600"></div>
+          <p>PodCloud is a web application to help users search for podcasts instead of using Itunes to do so. As a user signed up for the site they are able to create multiple playlists and add their selected podcasts to one of their created playlist. I built this app so it can help me listen to more podcasts because one could learn a lot from listening to many different podcasts. Podcasts are Awesome!!!<br />
+            <button><a href="https://shocking-cemetery-8361.herokuapp.com/users/sign_in">Live App &raquo;</a></button>
+            <button><a href="https://github.com/clickclickonsal/PocketPodcast">GitHub &raquo;</a></button>
+          </p>
+        </div>
+
+        <div class="slide project-all">
+          <h3>Bikestack</h3>
+          <div class="img-div"><img src="css/images/bikestack.png" height="300" width="600"></div>
+          <p>Bike stack is a project founded by neighbors to help simplify bike parking and make Baltimore a better place to live. Users can sign up/in and add markers to the map to display good/bad parking places for your bike. A user leaves a name, description and can add an image(optional). After marker is created users who are signed up for the site can up/down vote the bike parking spots. This project was created at the 3rd annual Baltimore Hackathon by team members: Chase Gilliam, Harrison Tan, Brice Dobry, Salvador Hernandez and Nate Weiner. 
+          <br />
+            <button><a href="bikestack.herokuapp.com">Live App &raquo;</a></button>
+            <button><a href="https://github.com/Ch4s3/bike_stack">GitHub &raquo;</a></button>
+          </p>
+        </div>
+
       </div>
 
       <div class="section skills" data-anchor="skills">
-        Skills
+        <h2>Skills</h2>
+
+        <ul>
+          <li><img class="underscore" src="css/images/underscore.png" alt="underscore"></li>
+          <li><img class="code-lang" src="css/images/jquery.png" alt="jquery"></li>
+          <li><img id="front-end" src="css/images/front-end.png" alt="html5-css3-javascript"></li>
+          <li><img class="code-lang" src="css/images/sass.png" alt="sass"></li>
+          <p>Best Practices in modern HTML, with awesome CSS skills to complement!<br />
+            Good Experience with Ajax, Vanilla Javascript, undescore.js and jQuery.<br /> Also some experience with backbone.js framework.<br/>
+            Experience with Sass to DRY up CSS and create awesome mixins.
+          </p>
+          <li><img class="code-lang" src="css/images/ruby.png" alt="ruby"></li>
+          <li><img class="code-lang" src="css/images/rails.png" alt="rails"></li>
+          <li><img class="code-lang" src="css/images/rspec.png" alt="rspec"></li>
+          <li><img class="code-lang" src="css/images/postgresql.png" alt="postgresql"></li>
+          <p>Experience with the Ruby on Rails Framework after getting familar and comfortable with Ruby on it's own.<br /> Used Postgresql database with Rails.<br /> Also did some TDD with RSpec.</p>
+          <li><img class="code-lang" src="css/images/cl.png" alt="command-line"></li>
+          <li><img class="code-lang" src="css/images/git.png" alt="git"></li>
+          <p>Great experience with the Command Line and Git! I do everthing on the command line!<br />
+          </p>
+        </ul>
       </div>
 
-      <!-- <div class="section contact" data-anchor="contact-me">
-      Contact Me
-      </div> -->
+      <div class="section contact" data-anchor="contact-me">
+        <h1>Contact Me</h1>
+          <p>Feel free to send me an email at <br /><a href="mailto:s.hernandez5400@gmail.com">s.hernandez5400@gmail.com</a><br/>
+          or connect with me at the sites on the top right corner of the page
+          </p>
+      </div>
 
     </div>
-
   </body>
 </html>
