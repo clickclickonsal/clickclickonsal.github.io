@@ -1,43 +1,77 @@
-html {
-  background: black;
+html, body {
   height: 100%;
   width: 100%;
 }
 
 .top-gray-bar {
-  /*position: absolute;
-  top: 0;
-  left: 0;*/
-  height: 8%;
-  width: 100%;
   background: grey;
   color: white;
+  font-size: 2.5em;
+  border-bottom: 0.045em solid #efefef;
+  position: fixed;
+  z-index: 7;
+  width: 100%;
 }
 
-h1 {
-  position: relative;
-  left: 0;
-  bottom: 0;
+.social-icons {
+  position: absolute;
+  top: 0.8em;
+  right: 1em;
   width: 50%;
-  background: grey;
+  text-align: right;
+  position: fixed;
+  z-index: 7;
 }
 
 #role {
   font-size: 0.5em;
+  color: #efefef;
 }
 
-#social-icons {
-  position: absolute;
-  top: 0.3em;
-  right: 1em;
-  text-align: right;
-  width: 30%;
-}
-
-#social-icons img {
-  height: 7%;
-  width: 7%;
-}
-#social-icons img:hover {
+.social-icons img {
+  height: 3%;
+  width: 3%;
+  transition: 1s;
 
 }
+
+.social-icons img:hover {
+  height: 3.5%;
+  width: 3.5%;
+}
+
+.social-icons a {
+  text-decoration: none;
+  padding-right: 0.1em;
+}
+
+#menu {
+  position: fixed;
+  right: 0;
+  top: 1.9em;
+  z-index: 7;
+  list-style-type: none;
+  background: grey;
+  border: 0.1em solid #efefef;
+}
+
+#menu li {
+  display: inline;
+  padding-right: 2em;
+}
+
+#menu a {
+  text-decoration: none;
+  font-size: 2em;
+  color: #39beea;
+  font-family: Rockwell Extra Bold;
+  transition: 1s;
+}
+
+#menu a:hover {
+  color: white;
+}
+
+
+
+

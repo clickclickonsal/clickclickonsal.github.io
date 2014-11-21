@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Salvador Hernandez</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery_fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="css/app_fullpage.css">
+    <link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
+
+    <script src="js/vendors/jquery.min.js"></script>
+    <script src="js/vendors/jquery_easings.min.js"></script>
+    <script type="text/javascript" src="js/jquery_fullPage.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#fullpage').fullpage({
+          anchors: ['about-me', 'projects', 'skills'],
+          menu: '#menu'
+        });
+        $('#fullpage').on("mousewheel", function () {
+          $("#header").fadeIn(300)
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="top-gray-bar">
+      <strong>Salvador Hernandez</strong> <span id="role">Full Stack Web Developer</span>
+    </div>
+
+    <ul id="menu">
+      <li data-menuanchor="about-me" class="active"><a href="#about-me">About Me</a></li>
+      <li data-menuanchor="projects"><a href="#projects">Projects</a></li>
+      <li data-menuanchor="skills"><a href="#skills">Skills</a></li>
+      <li data-menuanchor="contact-me"><a href="#contact-me">Contact</a></li>
+    </ul>
+
+    <div class="social-icons">
+    <strong>Connect With Me</strong>
+      <a href="https://twitter.com/clickclickonsal">
+        <img src="css/images/twitter_logo.png" width="48" height="48" alt="Twitter" />
+      </a>
+
+      <a href="www.linkedin.com/pub/salvador-hernandez/7b/523/b14/">
+        <img src="css/images/linkedin.png" width="48" height="48" alt="LinkedIn" />
+      </a>
+
+      <a href="https://github.com/clickclickonsal">
+        <img src="css/images/github.png" width="48" height="48" alt="Github" />
+      </a>
+
+      <a href="https://plus.google.com/107327118374712834410/posts">
+        <img src="css/images/google_plus.png" width="48" height="48" alt="Google Plus" />
+      </a>
+
+      <a href="http://codepen.io/clickclickkonsal">
+        <img src="css/images/codepen.png" width="48" height="48" alt="Codepen" />
+      </a>
+    </div>
+  
+    <div id="fullpage">
+
+      <div class="section home active" data-anchor="about-me"> 
+        <div class="home-text">
+          <p>
+            <span id="welcome-text">Hey I'm Sal!</span></br />
+            Full stack web developer motivated by hard work and the passion for building things. Valued collaborator with a knack for analyzing data and prioritizing tasks to achieve consistent results. Focused drive for professional excellence and a thirst for knowledge.
+          </p>
+        </div>
+      </div>
+
+      <div class="section" data-anchor="projects">
+        My Projects
+      </div>
+
+      <div class="section skills" data-anchor="skills">
+        Skills
+      </div>
+
+      <!-- <div class="section contact" data-anchor="contact-me">
+      Contact Me
+      </div> -->
+
+    </div>
+
+  </body>
+</html>
