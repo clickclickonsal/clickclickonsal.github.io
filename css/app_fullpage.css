@@ -40,22 +40,41 @@ h3 {
   font-size: 4em;
   text-align: center;
   font-family: Rockwell Extra Bold;
-  margin: -5.2em;
   color: white;
-}
-/*projects page*/
-.project1 {
-  height: 100%;
-  width: 100%;
+  margin-top: 0em;
 }
 
-.project1 img {
-  position: absolute;
-  top: 10em;
-  left: 27em;
-  height: 30%;
-  width: 10%;
+/*.img-div img {
+  height: 40%;
+  width: 40%;
+}*/
+
+.img-div {
+  text-align: center;
 }
+
+.project-all p {
+  clear: both;
+  margin: auto;
+  width: 42%;
+  background: grey;
+  opacity: 0.8;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+
+.project-all a {
+  text-decoration: none;
+  color: #39beea;
+  transition: 1s;
+}
+
+.project-all a:hover {
+  color: black;
+}
+
+/*projects page
 
 /*skills page*/
 .skills {
@@ -140,4 +159,4 @@ h1 {
   font-family: Rockwell Extra Bold;
   font-size: 3em;
 }
-/*contact me*/
+/*contact me
