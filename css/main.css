@@ -3,7 +3,7 @@ html, body {
   width: 100%;
 }
 
-.top-gray-bar {
+.top-gray-bar, #footer {
   background: grey;
   color: white;
   font-size: 2.5em;
@@ -11,6 +11,12 @@ html, body {
   position: fixed;
   z-index: 7;
   width: 100%;
+}
+
+#footer {
+  bottom: 0;
+  text-align: left;
+  font-size: 0.8em;
 }
 
 .social-icons {
@@ -62,7 +68,7 @@ html, body {
 
 #menu a {
   text-decoration: none;
-  font-size: 2em;
+  font-size: 1.6em;
   color: #39beea;
   font-family: Rockwell Extra Bold;
   transition: 1s;

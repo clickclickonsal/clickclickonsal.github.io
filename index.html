@@ -14,7 +14,7 @@
     <script type="text/javascript">
       $(document).ready(function() {
         $('#fullpage').fullpage({
-          anchors: ['about-me', 'projects', 'skills'],
+          anchors: ['about-me', 'projects', 'skills', 'contact-me'],
           menu: '#menu'
         });
         $('#fullpage').on("mousewheel", function () {
@@ -33,6 +33,7 @@
       <li data-menuanchor="projects"><a href="#projects">Projects</a></li>
       <li data-menuanchor="skills"><a href="#skills">Skills</a></li>
       <li data-menuanchor="contact-me"><a href="#contact-me">Contact</a></li>
+      <li data-menuanchor="-resume"><a href="css/images/SalvadorHernandezResume.pdf">My Resume</a></li>
     </ul>
 
     <div class="social-icons">
@@ -57,7 +58,9 @@
         <img src="css/images/codepen.png" width="48" height="48" alt="Codepen" />
       </a>
     </div>
-  
+    <div id="footer">
+      &copy; 2014 Salvador Hernandez Web Dev
+    </div>
     <div id="fullpage">
 
       <div class="section home active" data-anchor="about-me"> 
@@ -69,19 +72,52 @@
         </div>
       </div>
 
-      <div class="section" data-anchor="projects">
-        My Projects
+      <div class="section projects" data-anchor="projects">
+
+        <div class="slide project1">
+          <h3>Docarmation</h3>
+          <img src="css/images/docarmation.png">
+          <p>Docarmation </p>
+          <button><a href="http://quiet-stream-4980.herokuapp.com/vehicles/new">Live App &raquo;</a></button>
+          <button><a href="https://github.com/clickclickonsal/Docarment">GitHub &raquo;</a></button>
+        </div>
+
+        <div class="slide">Survival</div>
+        <div class="slide">Podcloud</div>
+        <div class="slide">Bikestack</div>
       </div>
 
       <div class="section skills" data-anchor="skills">
-        Skills
+        <h2>Skills</h2>
+
+        <ul>
+          <li><img class="underscore" src="css/images/underscore.png" alt="underscore"></li>
+          <li><img class="code-lang" src="css/images/jquery.png" alt="jquery"></li>
+          <li><img id="front-end" src="css/images/front-end.png" alt="html5-css3-javascript"></li>
+          <li><img class="code-lang" src="css/images/sass.png" alt="sass"></li>
+          <p>Best Practices in modern HTML, with awesome CSS skills to complement!<br />
+            Good Experience with Ajax, Vanilla Javascript, undescore.js and jQuery.<br /> Also some experience with backbone.js framework.<br/>
+            Experience with Sass to DRY up CSS and create awesome mixins.
+          </p>
+          <li><img class="code-lang" src="css/images/ruby.png" alt="ruby"></li>
+          <li><img class="code-lang" src="css/images/rails.png" alt="rails"></li>
+          <li><img class="code-lang" src="css/images/rspec.png" alt="rspec"></li>
+          <li><img class="code-lang" src="css/images/postgresql.png" alt="postgresql"></li>
+          <p>Experience with the Ruby on Rails Framework after getting familar and comfortable with Ruby on it's own.<br /> Used Postgresql database with Rails.<br /> Also did some TDD with RSpec.</p>
+          <li><img class="code-lang" src="css/images/cl.png" alt="command-line"></li>
+          <li><img class="code-lang" src="css/images/git.png" alt="git"></li>
+          <p>Great experience with the Command Line and Git! I do everthing on the command line!<br />
+          </p>
+        </ul>
       </div>
 
-      <!-- <div class="section contact" data-anchor="contact-me">
-      Contact Me
-      </div> -->
+      <div class="section contact" data-anchor="contact-me">
+        <h1>Contact Me</h1>
+          <p>Feel free to send me an email at <br /><a href="mailto:s.hernandez5400@gmail.com">s.hernandez5400@gmail.com</a><br/>
+          or connect with me at the sites on the top right corner of the page
+          </p>
+      </div>
 
     </div>
-
   </body>
 </html>
