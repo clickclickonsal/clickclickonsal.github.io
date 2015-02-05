@@ -145,8 +145,8 @@ h4 {
 	text-decoration: underline;
 }
 .skills-section {
-	margin-top:18em;
-	height: 58em;
+	margin-top:5em;
+	height: 40em;
 }
 .methods p {
 	font-size: 1.5em;
@@ -177,7 +177,7 @@ h4 {
 }
 @media all and (max-width: 770px) {
 	.skills-section {
-		height: 86em;
+		height: 75em;
 	}
 }
 @media all and (max-width: 745px) {
