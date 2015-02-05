@@ -129,7 +129,7 @@ h4 {
 }
 .skills-section {
 	margin-top:18em;
-	height: 100vh;
+	height: 58em;
 }
 .methods p {
 	font-size: 1.5em;
@@ -160,7 +160,7 @@ h4 {
 }
 @media all and (max-width: 770px) {
 	.skills-section {
-		height: 130vh;
+		height: 86em;
 	}
 }
 @media all and (max-width: 745px) {
