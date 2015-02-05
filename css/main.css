@@ -6,6 +6,9 @@ body {
 	color: white;
 	text-decoration: none;
 }
+#footer {
+	background-color: #efefef;
+}
 /* Nav-bar*/
 .navbar-brand {
 	font-size: 3em;
