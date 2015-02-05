@@ -1,83 +1,210 @@
-html, body {
-  height: 100%;
-  width: 100%;
+body {
+	font-family: "serif";
+	position: relative;;
 }
-
-.top-gray-bar, #footer {
-  background: grey;
-  color: white;
-  font-size: 2.5em;
-  border-bottom: 0.045em solid #efefef;
-  position: fixed;
-  z-index: 7;
-  width: 100%;
+.btn-info a {
+	color: white;
+	text-decoration: none;
 }
-
-#footer {
-  bottom: 0;
-  text-align: left;
-  font-size: 0.8em;
+/* Nav-bar*/
+.navbar-brand {
+	font-size: 3em;
 }
-
-.social-icons {
-  position: absolute;
-  top: 0.8em;
-  right: 1em;
-  width: 50%;
-  text-align: right;
-  position: fixed;
-  z-index: 7;
+.nav-pills li a {
+	padding: 1em;
 }
+/* Nav-bar */
 
-#role {
-  font-size: 0.5em;
-  color: #efefef;
+
+/* Shared Properties*/
+h2 {
+	font-size: 4em;
+	font-weight: bolder;
+	color: black;
 }
+/* Shared Properties*/
 
-.social-icons img {
-  height: 3%;
-  width: 3%;
-  transition: 1s;
 
+/* About Me Section */
+.first-section {
+	height: 55em;
+	width: 90%;
+	margin: 0;
+	padding: 0;
 }
-
-.social-icons img:hover {
-  height: 3.5%;
-  width: 3.5%;
+.about-me {
+	position: relative;
+	background: grey url('../img/IMG_4136.jpg') no-repeat;
+	background-position: center center;
+	background-size: cover;
+	width: 100vw;
+	height: 30em;
+  margin-top: 3.6em;
 }
-
-.social-icons a {
-  text-decoration: none;
-  padding-right: 0.1em;
+.about-me h1 {
+	position: absolute;
+	bottom: 0;
+	color: rgba(255,255,255,0.75);
+	font-size: 1.5em;
+	width: 93%;
 }
-
-#menu {
-  position: fixed;
-  right: 0;
-  top: 1.9em;
-  z-index: 7;
-  list-style-type: none;
-  background: grey;
-  border: 0.1em solid #efefef;
+.font-awesome {
+	font-size: 4em;
+	position: absolute;
+	top: 0.3em;
+	right: 0;
+	list-style-type: none;
 }
-
-#menu li {
-  display: inline;
-  padding-right: 2em;
+.font-awesome i {
+	color: white;
 }
-
-#menu a {
-  text-decoration: none;
-  font-size: 1.6em;
-  color: #39beea;
-  font-family: Rockwell Extra Bold;
-  transition: 1s;
+.font-awesome a:hover i, .font-awesome a:focus i{
+	color: #337ab7;
 }
-
-#menu a:hover {
-  color: white;
+.about-me-content {
+	text-align: center;
 }
+.about-me-content .row{
+	width: 100vw;
+	margin: auto;
+}
+.about-me-content p {
+	width: 50%;
+	margin: auto;
+	font-size: 1.5em;
+}
+/* About Me Section */
 
 
+/* Projects Section */
+.second-section {
+	text-align: center;
+	height: 98em;
+	background: url("../img/empty-garage.jpg") no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.second-section h2 {
+	color: rgba(0,0,0,1);
+	margin-top: 1em;
+}
+h3 {
+	font-weight: bolder;
+}
+.lead {
+	font-weight: bolder;
+}
+.lead-paragraph {
+	text-align: left;
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-top: 1em;
+}
+.lead-paragraph p {
+	height: 10em;
+	overflow: scroll;
+}
+.sprite { background: url('../img/sprite.png') no-repeat top left; width: 400px; height: 224px; margin: auto; } 
+.sprite.tictactoe { background-position: 0 0; } 
+.sprite.survival { background-position: 0 -234px; } 
+.sprite.podcloud-homepage { background-position: 0 -468px; } 
+.sprite.docarmation-homepage { background-position: 0 -702px; } 
+.sprite.bside-homepage { background-position: 0 -936px; } 
+.sprite.bikestack-homepage { background-position: 0 -1170px; }
+.sprite.bside-homepage:hover { background-position: 0 -1404px; } 
+/* Projects Section */
 
+/* Skills Section */
+.front-end, .back-end {
+	border-right: 1px solid black;
+}
+.icons i {
+	font-size: 4em;
+}
+h4 {
+	font-size: 1.5em;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.skills-section {
+	margin-top:18em;
+	height: 100vh;
+}
+.methods p {
+	font-size: 1.5em;
+}
+.methods {
+	border-left: 1px solid black;
+}
+/* Skills Section */
 
+/* Contact-us Section*/
+#contact {
+	background-image: url("../img/highway.jpg");
+	background-attachment: fixed;
+	height: 55em;
+	background-size: cover;
+}
+#contact h5 {
+	font-size: 5em;
+	margin-top: 1em;
+}
+/* Contact-us Section*/
+
+/* Media Queries */
+@media all and (max-width: 1000px) {
+	.bside-descript {
+		display: none;
+	}
+}
+@media all and (max-width: 770px) {
+	.skills-section {
+		height: 130vh;
+	}
+}
+@media all and (max-width: 745px) {
+	.about-me h1 {
+		font-size: 1.2em;
+	}
+	.font-awesome {
+		font-size: 3.5em;
+	}
+	.font-awesome i {
+		padding-top: 0.4em;
+	}
+	.about-me-content p{
+		width: 75%;
+	}
+}
+@media all and (max-width: 600px) {
+	.about-me-content p {
+		font-size: 1.2em;
+	}
+}
+@media all and (max-width: 420px) {
+	.navbar-brand {
+		font-size: 2em;
+	}
+	.about-me h1 {
+		font-size: 1em;
+	}
+	.font-awesome {
+		font-size: 3em;
+	}
+	.font-awesome i {
+		padding-top: 0.4em;
+	}
+	.about-me-content p {
+		font-size: 1em;
+	}
+	.sprite {
+		width: 100%;
+	}
+}
+@media all and (max-width: 280px) {
+	.navbar-brand {
+		font-size: 1.4em;
+	}
+}
+/* Media Queries */
