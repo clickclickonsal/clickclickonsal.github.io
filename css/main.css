@@ -13,6 +13,18 @@ body {
 .nav-pills li a {
 	padding: 1em;
 }
+.fa-hand-o-right {
+	position: relative;
+	  -webkit-animation: move_hand 1s linear 0s infinite alternate;
+     -moz-animation: move_hand 1s linear 0s infinite alternate;
+       -o-animation: move_hand 1s linear 0s infinite alternate;
+          animation: move_hand 1s linear 0s infinite alternate;
+}
+
+@-webkit-keyframes move_hand { from { left:-0.4em; } to { left:0; }  }
+   @-moz-keyframes move_hand { from { left:-0.4em; } to { left:0; }  }
+     @-o-keyframes move_hand { from { left:-0.4em; } to { left:0; }  }
+        @keyframes move_hand { from { left:-0.4em; } to { left:0; }  }
 /* Nav-bar */
 
 
