@@ -1,0 +1,210 @@
+body {
+	font-family: "serif";
+	position: relative;;
+}
+.btn-info a {
+	color: white;
+	text-decoration: none;
+}
+/* Nav-bar*/
+.navbar-brand {
+	font-size: 3em;
+}
+.nav-pills li a {
+	padding: 1em;
+}
+/* Nav-bar */
+
+
+/* Shared Properties*/
+h2 {
+	font-size: 4em;
+	font-weight: bolder;
+	color: black;
+}
+/* Shared Properties*/
+
+
+/* About Me Section */
+.first-section {
+	height: 55em;
+	width: 90%;
+	margin: 0;
+	padding: 0;
+}
+.about-me {
+	position: relative;
+	background: grey url('../img/IMG_4136.jpg') no-repeat;
+	background-position: center center;
+	background-size: cover;
+	width: 100vw;
+	height: 30em;
+  margin-top: 3.6em;
+}
+.about-me h1 {
+	position: absolute;
+	bottom: 0;
+	color: rgba(255,255,255,0.75);
+	font-size: 1.5em;
+	width: 93%;
+}
+.font-awesome {
+	font-size: 4em;
+	position: absolute;
+	top: 0.3em;
+	right: 0;
+	list-style-type: none;
+}
+.font-awesome i {
+	color: white;
+}
+.font-awesome a:hover i, .font-awesome a:focus i{
+	color: #337ab7;
+}
+.about-me-content {
+	text-align: center;
+}
+.about-me-content .row{
+	width: 100vw;
+	margin: auto;
+}
+.about-me-content p {
+	width: 50%;
+	margin: auto;
+	font-size: 1.5em;
+}
+/* About Me Section */
+
+
+/* Projects Section */
+.second-section {
+	text-align: center;
+	height: 98em;
+	background: url("../img/empty-garage.jpg") no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.second-section h2 {
+	color: rgba(0,0,0,1);
+	margin-top: 1em;
+}
+h3 {
+	font-weight: bolder;
+}
+.lead {
+	font-weight: bolder;
+}
+.lead-paragraph {
+	text-align: left;
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-top: 1em;
+}
+.lead-paragraph p {
+	height: 10em;
+	overflow: scroll;
+}
+.sprite { background: url('../img/sprite.png') no-repeat top left; width: 400px; height: 224px; margin: auto; } 
+.sprite.tictactoe { background-position: 0 0; } 
+.sprite.survival { background-position: 0 -234px; } 
+.sprite.podcloud-homepage { background-position: 0 -468px; } 
+.sprite.docarmation-homepage { background-position: 0 -702px; } 
+.sprite.bside-homepage { background-position: 0 -936px; } 
+.sprite.bikestack-homepage { background-position: 0 -1170px; }
+.sprite.bside-homepage:hover { background-position: 0 -1404px; } 
+/* Projects Section */
+
+/* Skills Section */
+.front-end, .back-end {
+	border-right: 1px solid black;
+}
+.icons i {
+	font-size: 4em;
+}
+h4 {
+	font-size: 1.5em;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.skills-section {
+	margin-top:18em;
+	height: 100vh;
+}
+.methods p {
+	font-size: 1.5em;
+}
+.methods {
+	border-left: 1px solid black;
+}
+/* Skills Section */
+
+/* Contact-us Section*/
+#contact {
+	background-image: url("../img/highway.jpg");
+	background-attachment: fixed;
+	height: 55em;
+	background-size: cover;
+}
+#contact h5 {
+	font-size: 5em;
+	margin-top: 1em;
+}
+/* Contact-us Section*/
+
+/* Media Queries */
+@media all and (max-width: 1000px) {
+	.bside-descript {
+		display: none;
+	}
+}
+@media all and (max-width: 770px) {
+	.skills-section {
+		height: 130vh;
+	}
+}
+@media all and (max-width: 745px) {
+	.about-me h1 {
+		font-size: 1.2em;
+	}
+	.font-awesome {
+		font-size: 3.5em;
+	}
+	.font-awesome i {
+		padding-top: 0.4em;
+	}
+	.about-me-content p{
+		width: 75%;
+	}
+}
+@media all and (max-width: 600px) {
+	.about-me-content p {
+		font-size: 1.2em;
+	}
+}
+@media all and (max-width: 420px) {
+	.navbar-brand {
+		font-size: 2em;
+	}
+	.about-me h1 {
+		font-size: 1em;
+	}
+	.font-awesome {
+		font-size: 3em;
+	}
+	.font-awesome i {
+		padding-top: 0.4em;
+	}
+	.about-me-content p {
+		font-size: 1em;
+	}
+	.sprite {
+		width: 100%;
+	}
+}
+@media all and (max-width: 280px) {
+	.navbar-brand {
+		font-size: 1.4em;
+	}
+}
+/* Media Queries */
