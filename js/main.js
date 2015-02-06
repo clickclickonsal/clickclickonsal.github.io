@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	smoothScroll.init();
   $(window).resize(function(){
 		if( $(window).width() < 768 ){
 			$(".nav-pills").addClass("nav-stacked");
