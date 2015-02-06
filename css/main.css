@@ -45,7 +45,7 @@ h2 {
 /* About Me Section */
 .first-section {
 	height: 55em;
-	width: 90%;
+	width: 100%;
 	margin: 0;
 	padding: 0;
 }
@@ -122,7 +122,10 @@ h3 {
 	height: 10em;
 	overflow: scroll;
 }
-.sprite { background: url('../img/sprite.png') no-repeat top left; height: 224px; margin: auto; } 
+.sprite { background: url('../img/sprite.png') no-repeat top left; 
+	height: 224px; 
+	margin: auto;
+} 
 .sprite.tictactoe { background-position: 0 0; } 
 .sprite.survival { background-position: 0 -234px; } 
 .sprite.podcloud-homepage { background-position: 0 -468px; } 
@@ -147,6 +150,7 @@ h4 {
 .skills-section {
 	margin-top:5em;
 	height: 40em;
+	text-align: center;
 }
 .methods p {
 	font-size: 1.5em;
@@ -160,6 +164,7 @@ h4 {
 #contact {
 	background-image: url("../img/highway.jpg");
 	background-attachment: fixed;
+	background-position: center center;
 	height: 55em;
 	background-size: cover;
 }
@@ -184,12 +189,26 @@ h4 {
 .font-awesome-2 li a {
 	text-decoration: none;
 }
+.col-md-offset-3 {
+	text-align: center;
+}
+h2 {
+	text-align: center;
+}
 /* Contact-us Section*/
 
 /* Media Queries */
 @media all and (max-width: 1000px) {
 	.bside-descript {
 		display: none;
+	}
+	.second-section {
+		height: 270em;
+	}
+}
+@media all and (max-width: 991px) {
+	.sprite {
+		width: 50%;
 	}
 }
 @media all and (max-width: 770px) {
@@ -239,6 +258,11 @@ h4 {
 @media all and (max-width: 280px) {
 	.navbar-brand {
 		font-size: 1.4em;
+	}
+}
+@media all and (max-width: 240px) {
+	#contact {
+		height: 70em;
 	}
 }
 /* Media Queries */
