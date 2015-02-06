@@ -185,6 +185,7 @@ h4 {
 .font-awesome-2 li .fa:hover {
 	background: black;
 	color: white;
+	border-radius: 0.1em;
 }
 .font-awesome-2 li a {
 	text-decoration: none;
