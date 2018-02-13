@@ -1,270 +1,241 @@
 body {
-	font-family: "serif";
-	position: relative;;
+  font-family: "serif";
+  position: relative;
 }
+
+nav {
+  background-color: #001212;
+}
+
 .btn-info a {
-	color: white;
-	text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
-#footer {
-	background-color: #efefef;
+
+.panel-footer {
+  background-color: white;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
+
 /* Nav-bar*/
 .navbar-brand {
-	font-size: 3em;
+  font-size: 3em;
 }
+
 .nav-pills li a {
-	padding: 1em;
+  padding: 1em;
 }
 /* Nav-bar */
 
 /* Hand Animation */
-.fa-hand-o-right {
-	position: relative;
-	-webkit-animation: move_hand 1s linear 0s infinite alternate;
+.fa-hand-point-right {
+  position: relative;
+  -webkit-animation: move_hand 1s linear 0s infinite alternate;
   -moz-animation: move_hand 1s linear 0s infinite alternate;
   -o-animation: move_hand 1s linear 0s infinite alternate;
   animation: move_hand 1s linear 0s infinite alternate;
 }
 
-@-webkit-keyframes move_hand { from { left:-0.4em; } to { left:0; }  }
-@-moz-keyframes move_hand { from { left:-0.4em; } to { left:0; }  }
-@-o-keyframes move_hand { from { left:-0.4em; } to { left:0; }  }
-@keyframes move_hand { from { left:-0.4em; } to { left:0; }  }
+@-webkit-keyframes move_hand {
+  from {
+    left: -0.4em;
+  }
+  to {
+    left: 0;
+  }
+}
+@-moz-keyframes move_hand {
+  from {
+    left: -0.4em;
+  }
+  to {
+    left: 0;
+  }
+}
+@-o-keyframes move_hand {
+  from {
+    left: -0.4em;
+  }
+  to {
+    left: 0;
+  }
+}
+@keyframes move_hand {
+  from {
+    left: -0.4em;
+  }
+  to {
+    left: 0;
+  }
+}
 /* Hand Animation */
 
 /* Shared Properties*/
 h2 {
-	font-size: 4em;
-	font-weight: bolder;
-	color: black;
-	text-align: center;
+  font-size: 4em;
+  font-weight: bolder;
+  color: black;
+  text-align: center;
 }
 /* Shared Properties*/
 
-
 /* About Me Section */
 .first-section {
-	height: 55em;
-	width: 100%;
-	margin: 0;
-	padding: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.first-section p {
+  text-align: left;
 }
 .about-me {
-	position: relative;
-	background: grey url('../img/IMG_4136.jpg') no-repeat;
-	background-position: center center;
-	background-size: cover;
-	width: 100vw;
-	height: 30em;
+  position: relative;
+  background: grey url("../img/sal.png") no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100vw;
+  height: 40em;
   margin-top: 3.6em;
 }
 .about-me h1 {
-	position: absolute;
-	bottom: 0;
-	color: rgba(255,255,255,0.75);
-	font-size: 1.5em;
-	width: 93%;
+  position: absolute;
+  bottom: 0;
+  color: rgba(255, 255, 255, 1);
+  font-weight: bold;
+  font-size: 1.5em;
+  width: 93%;
 }
 .font-awesome {
-	font-size: 4em;
-	position: absolute;
-	top: 0.3em;
-	right: 0;
-	list-style-type: none;
+  font-size: 4em;
+  position: absolute;
+  top: 0.3em;
+  right: 0;
+  list-style-type: none;
 }
-.font-awesome i {
-	color: white;
+.font-awesome svg {
+  color: white;
 }
-.font-awesome a:hover i, .font-awesome a:focus i{
-	color: #337ab7;
+.font-awesome a:hover i,
+.font-awesome a:focus i {
+  color: #337ab7;
 }
 .about-me-content {
-	text-align: center;
+  text-align: center;
 }
-.about-me-content .row{
-	width: 100vw;
-	margin: auto;
+.about-me-content .row {
+  width: 100vw;
+  margin: auto;
 }
 .about-me-content p {
-	width: 50%;
-	margin: auto;
-	font-size: 1.5em;
+  width: 50%;
+  margin: auto;
+  font-size: 1.5em;
 }
 /* About Me Section */
 
-
-/* Projects Section */
-.second-section {
-	text-align: center;
-	height: 98em;
-	background: url("../img/empty-garage.jpg") no-repeat;
-	background-position: center center;
-	background-attachment: fixed;
-	background-size: cover;
-}
-.second-section h2 {
-	color: rgba(0,0,0,1);
-	margin-top: 1em;
-}
-h3 {
-	font-weight: bolder;
-}
-.lead {
-	font-weight: bolder;
-}
-.lead-paragraph {
-	text-align: left;
-	font-size: 1.2em;
-	font-weight: bold;
-	margin-top: 1em;
-}
-.lead-paragraph p {
-	height: 10em;
-	overflow: scroll;
-}
-.sprite { background: url('../img/sprite.png') no-repeat top left; 
-	height: 224px; 
-	margin: auto;
-} 
-.sprite.tictactoe { background-position: 0 0; } 
-.sprite.survival { background-position: 0 -234px; } 
-.sprite.podcloud-homepage { background-position: 0 -468px; } 
-.sprite.docarmation-homepage { background-position: 0 -702px; } 
-.sprite.bside-homepage { background-position: 0 -936px; } 
-.sprite.bikestack-homepage { background-position: 0 -1170px; }
-.sprite.bside-homepage:hover { background-position: 0 -1404px; } 
-/* Projects Section */
-
 /* Skills Section */
-.front-end, .back-end {
-	border-right: 1px solid black;
-}
-.icons i {
-	font-size: 4em;
-}
-h4 {
-	font-size: 1.5em;
-	font-weight: bold;
-	text-decoration: underline;
-}
 .skills-section {
-	margin-top:5em;
-	height: 40em;
-	text-align: center;
+  margin-top: 5em;
+  text-align: center;
 }
-.methods p {
-	font-size: 1.5em;
-}
-.methods {
-	border-left: 1px solid black;
+.skills-section p {
+  font-size: 2.5em;
 }
 /* Skills Section */
 
 /* Contact-us Section*/
 #contact {
-	background-image: url("../img/highway.jpg");
-	background-attachment: fixed;
-	background-position: center center;
-	height: 55em;
-	background-size: cover;
+  background-image: url("../img/highway.jpg");
+  background-attachment: fixed;
+  background-position: center center;
+  height: 40em;
+  background-size: cover;
 }
 #contact h5 {
-	font-size: 5em;
-	margin-top: 1em;
+  font-size: 5em;
+  margin-top: 1em;
 }
 .font-awesome-2 {
-	list-style-type: none;
+  list-style-type: none;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0;
 }
 .font-awesome-2 li {
-	display: inline;
-	font-size: 6em;
+  display: inline;
+  font-size: 6em;
 }
 .font-awesome-2 li .fa {
-	color: black;
+  color: black;
 }
 .font-awesome-2 li .fa:hover {
-	background: black;
-	color: white;
-	border-radius: 0.1em;
+  background: black;
+  color: white;
+  border-radius: 0.1em;
 }
 .font-awesome-2 li a {
-	text-decoration: none;
+  text-decoration: none;
 }
 .col-md-offset-3 {
-	text-align: center;
+  text-align: center;
 }
 #contact h2 {
-	margin-top: 2em;
+  margin-top: 2em;
 }
 /* Contact-us Section*/
 
+/* Footer */
+.panel-footer {
+  text-align: center;
+}
+/* Footer */
+
 /* Media Queries */
-@media all and (max-width: 1000px) {
-	.bside-descript {
-		display: none;
-	}
-	.second-section {
-		height: 270em;
-	}
-}
-@media all and (max-width: 991px) {
-	.sprite {
-		width: 50%;
-	}
-}
-@media all and (max-width: 770px) {
-	.skills-section {
-		height: 75em;
-	}
-}
 @media all and (max-width: 745px) {
-	.about-me h1 {
-		font-size: 1.2em;
-	}
-	.font-awesome {
-		font-size: 3.5em;
-	}
-	.font-awesome i {
-		padding-top: 0.4em;
-	}
-	.about-me-content p{
-		width: 75%;
-	}
+  .about-me h1 {
+    font-size: 1.2em;
+  }
+  .font-awesome {
+    font-size: 3.5em;
+  }
+  .font-awesome-2 {
+    font-size: 0.8em;
+  }
+  .font-awesome i {
+    padding-top: 0.4em;
+  }
+  .about-me-content p {
+    width: 75%;
+  }
 }
 @media all and (max-width: 600px) {
-	.about-me-content p {
-		font-size: 1.2em;
-	}
+  .about-me-content p {
+    font-size: 1.2em;
+  }
 }
 @media all and (max-width: 420px) {
-	.navbar-brand {
-		font-size: 2em;
-	}
-	.about-me h1 {
-		font-size: 1em;
-	}
-	.font-awesome {
-		font-size: 3em;
-	}
-	.font-awesome i {
-		padding-top: 0.4em;
-	}
-	.about-me-content p {
-		font-size: 1em;
-	}
-	.sprite {
-		width: 100%;
-	}
+  .navbar-brand {
+    font-size: 2em;
+  }
+  .about-me h1 {
+    font-size: 1em;
+  }
+  .font-awesome {
+    font-size: 3em;
+  }
+  .font-awesome i {
+    padding-top: 0.4em;
+  }
+  .about-me-content p {
+    font-size: 1em;
+  }
 }
 @media all and (max-width: 280px) {
-	.navbar-brand {
-		font-size: 1.4em;
-	}
-}
-@media all and (max-width: 240px) {
-	#contact {
-		height: 75em;
-	}
+  .navbar-brand {
+    font-size: 1.4em;
+  }
 }
 /* Media Queries */
