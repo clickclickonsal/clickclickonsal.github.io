@@ -5,6 +5,7 @@ body {
 
 nav {
   background-color: #001212;
+  padding: 0.5em 1em;
 }
 
 .btn-info a {
@@ -15,6 +16,7 @@ nav {
 /* Nav-bar*/
 .navbar-brand {
   font-size: 3em;
+  color: white;
 }
 
 .nav-pills li a {
@@ -100,6 +102,7 @@ h2 {
   font-weight: bold;
   font-size: 1.5em;
   width: 93%;
+  text-align: center;
 }
 .font-awesome {
   font-size: 4em;
@@ -229,6 +232,10 @@ h2 {
   }
   .about-me-content p {
     font-size: 1em;
+  }
+
+  #blog p {
+    font-size: 2em;
   }
 }
 @media all and (max-width: 280px) {
