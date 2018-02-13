@@ -12,13 +12,6 @@ nav {
   text-decoration: none;
 }
 
-.panel-footer {
-  background-color: white;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-}
-
 /* Nav-bar*/
 .navbar-brand {
   font-size: 3em;
@@ -168,10 +161,10 @@ h2 {
   display: inline;
   font-size: 6em;
 }
-.font-awesome-2 li .fa {
+.font-awesome-2 li svg {
   color: black;
 }
-.font-awesome-2 li .fa:hover {
+.font-awesome-2 li svg:hover {
   background: black;
   color: white;
   border-radius: 0.1em;
@@ -190,6 +183,11 @@ h2 {
 /* Footer */
 .panel-footer {
   text-align: center;
+  background-color: white;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 /* Footer */
 
