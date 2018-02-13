@@ -111,9 +111,9 @@ h2 {
 .font-awesome svg {
   color: white;
 }
-.font-awesome a:hover i,
-.font-awesome a:focus i {
-  color: #337ab7;
+.font-awesome svg:hover,
+.font-awesome svg:focus {
+  color: red;
 }
 .about-me-content {
   text-align: center;
