@@ -1,177 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>Salvador Hernandez</title>
+  <title>Sal Hernandez</title>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE-edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-
+  <meta name="description" content="Engineering Manager. Former mechanic. Pun enthusiast. Always down to chat.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body data-spy="scroll" data-target=".navbar-fixed-top">
-
-  <header class="navbar navbar-fixed-top">
-    <nav class="container-fluid" role="navigation">
-      <div class="navbar-header">
-        <a href="#about_me" class="navbar-brand">Sal Hernandez</a>
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle Navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-left">
+        <h1 class="name">Sal Hernandez</h1>
+        <p class="role">Engineering Manager <span class="dim">·</span> Ag-Tech <span class="flag">🇩🇴</span></p>
       </div>
-      <ul class="nav nav-pills navbar-right collapse navbar-collapse">
-        <li class="active">
-          <a data-scroll href="#about_me">About Me</a>
-        </li>
-        <li>
-          <a data-scroll href="#skills">Skills</a>
-        </li>
-        <li>
-          <a data-scroll href="#blog">Blog</a>
-        </li>
-        <li>
-          <a data-scroll href="#contact">Contact</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+      <nav class="nav">
+        <a href="mailto:s.hernandez5400@gmail.com" class="nav-link primary">Contact</a>
+        <a href="https://linkedin.com/in/clickclickonsal" target="_blank" rel="noopener" class="nav-link">LinkedIn</a>
+        <a href="https://github.com/clickclickonsal" target="_blank" rel="noopener" class="nav-link">GitHub</a>
+      </nav>
+    </header>
 
-  <div class="container-fluid first-section" id="about_me">
-    <div class="about-me">
-      <h1>
-        <img style="margin-left: 5px;" width="20" src="./img/dominican-flag-emoji.png" /> Software Engineer | Pun Master
-        | Former Automotive Technician | Tech Enthusiast
-      </h1>
-      <ul class="font-awesome">
-        <li>
-          <a href="https://twitter.com/clickclickonsal" target="_blank">
-            <i class="fab fa-twitter"></i>
+    <!-- Main Content -->
+    <main class="main">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero-text">
+          <p class="tagline">
+            <span class="tagline-line active">I shifted gears from cars to code.</span>
+            <span class="tagline-line">I build teams, not just features.</span>
+            <span class="tagline-line">I run marathons & debug life.</span>
+            <span class="tagline-line">Professional pun-isher.</span>
+          </p>
+          <p class="bio">Former automotive technician turned engineering leader. I traded torque wrenches for terminal windows in 2014 and never looked back. Now I grow engineering teams and crops at an ag-tech startup.</p>
+          <a href="mailto:s.hernandez5400@gmail.com" class="cta">
+            <span class="status-dot"></span>
+            <span>Let's chat →</span>
           </a>
-        </li>
-        <li>
-          <a href="https://linkedin.com/pub/salvador-hernandez/7b/523/b14/" target="_blank">
-            <i class="fab fa-linkedin"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/clickclickonsal" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-        </li>
-        <li>
-          <a href="http://codepen.io/clickclickonsal/" target="_blank">
-            <i class="fab fa-codepen"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="about-me-content">
-      <div class="row">
-        <h2>About Me</h2>
-        <p>
-          Back in August 2014, I decided I wanted to be part of the ever-growing advancement in technology and web
-          development. Since
-          then, I switched gears and left my career as an automotive technician to pursue a career in web development.
-          To
-          jump-start this transition, I attended a 12-week Web Development Immersive course that consisted of intensive
-          training
-          in common best practices for object-oriented programming, MVC frameworks, data modeling and test-driven
-          development.
-          It was then that I discovered my passion for programming.
-        </p>
-        <br />
-        <p>
-          Being a Software Engineer has changed my life and I truly believe it has made me a better person. It has
-          helped me connect
-          with people with all levels of experience. It has changed the way that I think and I am no longer afraid of
-          facing
-          problems. The high-level approach to how I solve a problem is to understand it first while staying focused on
-          the
-          desired goal. Through this approach, I have learned that the solution is “in-between” what we know and what we
-          are trying to solve for.
-        </p>
-        <br />
-        <p>
-          I love what I do and because of this, it has inspired me to become part of the growing tech community in
-          Baltimore City.
-          I enjoy giving back and I find it valuable to empower others in tech. I currently lead a local JavaScript
-          meetup
-          (CharmCityJS) that welcomes newcomers of all experiences. I am a firm believer in that community helps us grow
-          individually and together.
-        </p>
+        </div>
+        <div class="hero-image">
+          <img src="./img/sal.png" alt="Sal Hernandez" />
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="https://twitter.com/clickclickonsal" target="_blank" rel="noopener">Twitter</a>
+        <a href="https://dev.to/clickclickonsal/" target="_blank" rel="noopener">Blog</a>
       </div>
-    </div>
+      <p class="footer-tagline">"The solution lives in-between what we know and what we're solving for."</p>
+    </footer>
   </div>
 
-  <div class="container-fluid">
-    <div class="row skills-section" id="skills">
-      <h2>Skills</h2>
-      <p>Solving Problems 👨🏻‍💻 </p>
-    </div>
-  </div>
-
-  <div class="container-fluid">
-    <div class="row skills-section" id="blog">
-      <h2>Blog</h2>
-      <p>
-        <a href="https://dev.to/clickclickonsal/" target="_blank">https://dev.to/clickclickonsal/</a>
-      </p>
-    </div>
-  </div>
-
-  <div class="container-fluid" id="contact">
-    <div class="col-md-6 col-md-offset-3">
-      <h2>Contact Me</h2>
-      <h5>
-        <i class="far fa-hand-point-right"></i>
-        <a href="mailto:s.hernandez5400@gmail.com">
-          <i class="fas fa-envelope"></i>
-        </a>
-      </h5>
-    </div>
-    <div class="col-md-6 col-md-offset-3">
-      <ul class="font-awesome-2">
-        <li>
-          <a href="https://twitter.com/clickclickonsal" target="_blank">
-            <i class="fab fa-twitter"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://linkedin.com/in/clickclickonsal" target="_blank">
-            <i class="fab fa-linkedin"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/clickclickonsal" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-        </li>
-        <li>
-          <a href="http://codepen.io/clickclickonsal/" target="_blank">
-            <i class="fab fa-codepen"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="panel-footer">
-      &copy; 2021 Sal Hernandez Someone trynna make it in this world
-    </div>
-    <script src="js/main.min.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-58994707-2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
-      gtag('js', new Date());
-
-      gtag('config', 'UA-58994707-2');
-    </script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
